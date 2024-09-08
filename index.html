@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dounia Weahter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <img src="images/wind-turbine.gif" class="wind-turbine">
+    <h1>dounia weahter</h1>
+    <p>Stay prepared with Dounia Weather – your go-to source for accurate, real-time weather updates and forecasts worldwide.</p>
+    <form class="search-form" id="search">
+        <input class="search-form__input" id="search-input" type="text" placeholder="city name.." spellcheck="false">
+        <button class="search-form__submit-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+    <p id="error-message">city not found</p>
+    <section class="search-results" id="results">
+        <span class="temp">
+            <span id="temp">-</span>
+            <sup>°C</sup>
+        </span>
+
+        <img id="icon" src="images/clear.png" width="100px">
+        <h2 class="city" id="city">-</h2>
+        <div class="details">
+            <div class="detail">
+                <i class="fa-solid fa-water"></i>
+                <span id="humidity">
+                    -
+                </span>
+                <br>
+                Humidity
+            </div>
+            <div class="detail">
+                <i class="fa-solid fa-wind"></i>
+                <span id="wind-speed">
+                    -
+                </span>
+                <br>
+                Wind Speed
+            </div>
+        </div>
+    </section>
+</body>
+</html>
