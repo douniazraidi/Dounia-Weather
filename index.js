@@ -36,8 +36,8 @@ async function checkWeather(city) {
         document.getElementById('error-message').style.display = 'none';
         cityName.innerText = data.name;
         temprature.innerText = data.main.temp;
-        humidity.innerText = data.main.humidity;
-        windSpeed.innerText = data.wind.speed;
+        humidity.innerText = data.main.humidity + "%";
+        windSpeed.innerText = data.wind.speed + " Km/h";
     
         document.getElementById('results').style.display = 'flex';
     }
